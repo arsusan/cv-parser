@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic[email]
+python-dotenv
+httpx
+langchain-core
+langchain-openai
+langgraph
+langsmith
+pymupdf
+python-docx
+phonenumbers
+rapidfuzz
+pytest
