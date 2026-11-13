@@ -331,14 +331,12 @@ When you run the remaining cases, replace "Run and record" with the actual outco
 
 ## Troubleshooting
 
-| Problem                                  | Fix                                                                                     |
-| ---------------------------------------- | --------------------------------------------------------------------------------------- |
-| `429` or rate limit errors               | Wait a minute or choose another free model. The graph retries after a short pause.      |
-| Model not found (`404`)                  | Free model IDs change. Pick a current one from `GET /models`.                           |
-| Invalid JSON on every attempt            | Try a larger free model. Keep `temperature=0`.                                          |
-| `No text found`                          | The PDF is a scan. OCR is not supported.                                                |
-| CORS error in the browser                | Run the frontend on http://localhost:3000, or add your origin in `backend/app/main.py`. |
-| Email validation import error            | `pip install "pydantic[email]"`                                                         |
-| No traces in LangSmith                   | Check the three `LANGSMITH_*` variables and restart the backend after editing `.env`.   |
-| PowerShell blocks venv activation        | `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`                                   |
-| `curl` behaves differently in PowerShell | Use `curl.exe` instead of `curl`.                                                       |
+| Problem                       | Fix                                                                                     |
+| ----------------------------- | --------------------------------------------------------------------------------------- |
+| `429` or rate limit errors    | Wait a minute or choose another free model. The graph retries after a short pause.      |
+| Model not found (`404`)       | Free model IDs change. Pick a current one from `GET /models`.                           |
+| Invalid JSON on every attempt | Try a larger free model. Keep `temperature=0`.                                          |
+| `No text found`               | The PDF is a scan. OCR is not supported.                                                |
+| CORS error in the browser     | Run the frontend on http://localhost:3000, or add your origin in `backend/app/main.py`. |
+| Email validation import error | `pip install "pydantic[email]"`                                                         |
+| No traces in LangSmith        | Check the three `LANGSMITH_*` variables and restart the backend after editing `.env`.   |
