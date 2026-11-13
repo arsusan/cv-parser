@@ -2,8 +2,6 @@
 
 An AI-powered CV parsing application. Upload a CV (PDF or DOCX), and a **LangGraph** pipeline extracts the text, calls a free **OpenRouter** model, repairs invalid output, validates the result, calculates token cost, stores everything in **SQLite**, and sends traces to **LangSmith**.
 
-Built for the _AI Engineer Technical Interview Assignment: AI-Powered CV Parsing System with LangChain / LangGraph_.
-
 ## Features
 
 - Upload CVs in **PDF** or **DOCX** format (max 5 MB).
