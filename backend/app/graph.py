@@ -12,8 +12,7 @@ from .schemas import CVData
 from .validators import validate
 from .utils import total_years
 from .cost import compute_cost
-
-
+   
 class State(TypedDict, total=False):
     filename: str
     file_bytes: bytes

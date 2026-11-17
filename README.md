@@ -304,8 +304,6 @@ Model used for the recorded runs: `baidu/ernie-5.5-flash-preview:free`, prompt v
 
 **LangSmith evidence.** After the first test runs, the `cv-parser` project showed 3 traces succeeded, 0 failed, P50 and P99 latency of 6.1 s, and a total cost of $0.00 (free model).
 
-When you run the remaining cases, replace "Run and record" with the actual outcome.
-
 ## Design decisions
 
 - **LangGraph instead of one LLM call.** Separate nodes make each step testable and traceable, and the graph supports a retry loop and error routes cleanly.
